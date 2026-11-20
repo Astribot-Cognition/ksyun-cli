@@ -1,0 +1,116 @@
+{
+  "dev": {
+    "NotebookName!": "String",
+    "Description": "String",
+    "ResourcePoolId!": "String",
+    "QueueName!": "String",
+    "GPUType": "String",
+    "GPUNumber": "String",
+    "CPUNum": "Int",
+    "Memory": "Int",
+    "AccessType!": "String",
+    "StorageConfigs": [
+      {
+        "StorageConfigId": "String",
+        "MountPath": "String",
+        "StorageConfigType!": "String",
+        "MountProtocol": "String"
+      }
+    ],
+    "AutoSave": "Boolean",
+    "ServiceConfigs": [
+      {
+        "Service": "String",
+        "Port": "Int",
+        "EnablePublicNetwork": "Boolean"
+      }
+    ],
+    "ImageSource!": "String",
+    "ImageId": "String",
+    "ImageRegistryId": "String",
+    "ImageRepoId": "String",
+    "ImageTagId": "String",
+    "EnableSSH": "Boolean",
+    "SSHAuthorizedKeys": "String",
+    "SSHPort": "Int",
+    "EnablePublicNetworkSSH": "Boolean",
+    "AllocationId": "String",
+    "RunOnCPU": "String",
+    "AutoSaveConfig": {
+      "ImageType": "String",
+      "OfficialInstance": "String",
+      "UserName": "String",
+      "Password": "String"
+    },
+    "EnableVolume": "Boolean",
+    "VolumeConfig": {
+      "VolumeSize": "Int",
+      "VolumeType": "String"
+    },
+    "Envs": [
+      {
+        "Name": "String",
+        "Value": "String"
+      }
+    ]
+  },
+  "train": {
+    "TrainJobName!": "String",
+    "Description": "String",
+    "ResourcePoolId!": "String",
+    "Priority": "String",
+    "QueueName!": "String",
+    "Framework!": "String",
+    "AccessType": "String",
+    "SelfHealing": "Boolean",
+    "MaxRuntimeHour": "Long",
+    "JobRunOnCPU": "Boolean",
+    "SupportTensorboard": "Boolean",
+    "StorageConfigs": [
+      {
+        "StorageConfigId!": "String",
+        "MountType": "String",
+        "MountPath": "String",
+        "StorageSubPath": "String",
+        "MountProtocol": "String"
+      }
+    ],
+    "Roles!": [
+      {
+        "RoleName!": "String",
+        "Replicas!": "Int",
+        "ImageConfig!": {
+          "ImageId": "String",
+          "ImageSource!": "String",
+          "ImageRegistryId": "String",
+          "ImageRepoId": "String",
+          "ImageTagId": "String"
+        },
+        "ResourceConfig!": {
+          "GPUType": "String",
+          "GPUNumber": "Int",
+          "CPUNum!": "Int",
+          "Memory!": "Int"
+        },
+        "RunCommand": "String",
+        "RestartPolicy": "String",
+        "Envs": [
+          {
+            "Name": "String",
+            "Value": "String"
+          }
+        ]
+      }
+    ],
+    "HoldingTimeMinutes": "Int",
+    "EnableDeviceHealthCheck": "Boolean",
+    "DeviceHealthCheckConfig": {
+      "CheckTiming!": "String",
+      "MaxCheckTime": "Long"
+    },
+    "RuntimeEnv": "String",
+    "EntryPointCommand": "String",
+    "UseIdleResource": "Boolean",
+    "EnableRDMADepsCheck": "Boolean"
+  }
+}

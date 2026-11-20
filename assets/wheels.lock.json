@@ -1,0 +1,10 @@
+{
+  "certifi-2026.10.23-py3-none-any.whl": "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1",
+  "charset_normalizer-3.5.2-py3-none-any.whl": "b6b751274acb69d77b3323d6b7dbaa3c7fdfc1eb829b7eb61d262f32e1af9685",
+  "idna-3.20-py3-none-any.whl": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+  "kingsoftcloud_sdk_python-1.5.8.117-py2.py3-none-any.whl": "1feffeafb65334f7f14eeb80fdd36c7b653d8b5e6e3a113557d94586eaa7f5c1",
+  "requests-2.34.2-py3-none-any.whl": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0",
+  "requests_aws4auth-1.4.0-py3-none-any.whl": "d47262e3b537d2f9e0d4400ec5797230c271de45c4ec360b4695eb65002f4031",
+  "six-1.17.0-py2.py3-none-any.whl": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+  "urllib3-2.8.0-py3-none-any.whl": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3"
+}

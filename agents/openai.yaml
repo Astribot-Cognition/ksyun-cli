@@ -1,0 +1,4 @@
+interface:
+  display_name: "金山云 ksyun-cli"
+  short_description: "查询金山云算力余量，创建和复用开发环境与训练任务，检查日志和调度状态"
+  default_prompt: "使用 $ksyun-cli 查询资源队列和节点余量，检查是否适合提交我的训练任务。"
