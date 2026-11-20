@@ -14,7 +14,7 @@ from create import store_json
 
 
 REGION_HINT = "请用 --region 指定金山云地域，或设置 KSYUN_REGION。"
-TTY_HINT = "请在自己的终端运行 scripts/configure.py 输入 AK/SK（输入隐藏）。"
+TTY_HINT = "请在自己的终端运行 python3 -BS scripts/configure.py 输入 AK/SK（输入隐藏）。"
 
 
 def save_profile(name, before, updates):
