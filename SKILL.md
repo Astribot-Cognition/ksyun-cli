@@ -7,6 +7,8 @@ description: 通过金山云星泓 OpenAPI 和 KLog 查询资源池、节点 GPU
 
 使用随包的 Python CLI，所有子命令输出 JSON。执行主机需要 Python 3.10+。依赖随包提供，每次启动联网操作前校验 SHA-256。地区和 profile 是子命令前的全局参数。先确定账号和地域，示例地域为 `cn-northwest-3`。
 
+首次安装或配置身份时，按[安装步骤](references/runtime.md#首次安装)完成安装、凭证检查和只读验证。
+
 ## 选择执行入口
 
 - 已有金山云凭证的主机，运行 `python3 -BS scripts/ksyun_cli.py --region REGION ...`，脚本路径相对于本 skill。支持金山云 CLI 的 `~/.ksyun/config.json` 当前 profile 或显式 `--profile NAME`。其他配置和远程用法见 [执行环境](references/runtime.md)。

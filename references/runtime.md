@@ -1,5 +1,24 @@
 # 执行环境
 
+## 首次安装
+
+用户给出仓库地址并要求安装时，由 Agent 完成以下步骤。
+
+1. 将仓库安装到当前 Agent 的个人 skills 目录。Codex 可运行下面的命令。若目标已存在，先确认是同一份 skill，保留已有配置与本地改动。
+
+   ```bash
+   dest="${CODEX_HOME:-$HOME/.codex}/skills/ksyun-cli"
+   git clone https://github.com/Astribot-Cognition/ksyun-cli.git "$dest"
+   ```
+
+2. 确定凭证所在主机和运行地域。使用项目指定的 SSH 开发机时直接走下方远程调用示例，凭证留在该机。使用本机时，从已安装的 skill 目录运行 `python3 -BS scripts/configure.py --check` 检查已有配置。若仅缺地域，询问用户地域并在查询时传 `--region REGION`。执行 CLI 的主机需要 Python 3.10+，可使用该机已有的兼容解释器。
+
+3. 确实缺少凭证时，给用户一条使用已安装脚本绝对路径的命令，例如 `python3 -BS /path/to/ksyun-cli/scripts/configure.py --region REGION`，请用户在**自己的终端**运行；脚本隐藏 AK 和 SK 的输入。不要在聊天、命令行参数或 Agent 的终端中收集密钥。
+
+4. 在凭证所在主机用对应地域执行一次 `python3 -BS scripts/ksyun_cli.py --region REGION resources pools --limit 1`，或经下方 SSH 入口执行相同子命令。不需要创建开发机或训练任务。请求成功即可确认该身份能查询资源池，空列表也有效；若账号权限受限，说明具体失败的查询或用该账号已获权限的只读接口验证。
+
+## 本机运行
+
 运行脚本时从本 skill 所在目录解析路径。在凭证主机直接执行的示例：
 
 ```bash
